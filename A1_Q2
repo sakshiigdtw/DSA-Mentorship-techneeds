@@ -1,1 +1,28 @@
+#include <iostream>
+using namespace std; 
 
+int main() {
+    int m1,m2,m3;
+    cout<<"ENTER marks of subject 1: ";
+    cin>>m1;
+    cout<<"ENTER marks of subject 2: ";
+    cin>>m2;
+    cout<<"ENTER marks of subject 3: ";
+    cin>>m3;
+    float percent=((m1+m2+m3)*100/300);
+    
+    
+    if(percent>=85){
+        cout<<"GRADE A "<<percent<<endl;
+    } else if(percent>=65){
+        cout<<"GRADE B "<<endl;
+    } else if(percent>=45){
+        cout<<"GRADE C"<<endl;
+    } else {
+        cout<<"FAIL"<<endl;
+    }
+     
+    
+
+    return 0;
+}
